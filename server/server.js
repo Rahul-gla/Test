@@ -20,11 +20,25 @@ const MONGODB_URI="mongodb+srv://rahulgla2cs23:X62bBix8sVhX951i@cluster0.0w8vd.m
 
 
 // const cors = require('cors');
+
+// https://lucent-peony-0c9f9a.netlify.app/
+
+
+
+
+const allowedOrigins = ['https://lucent-peony-0c9f9a.netlify.app/'];
+
 app.use(cors({
-    origin: 'http://localhost:3000', // Adjust this to your frontend's origin
-    methods: ['GET', 'POST'],
-    credentials: true
+    origin: allowedOrigins,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify the methods you want to allow
+    credentials: true // If you need to allow cookies or authentication
 }));
+
+// app.use(cors({
+//     origin: 'http://localhost:3000', // Adjust this to your frontend's origin
+//     methods: ['GET', 'POST'],
+//     credentials: true
+// }));
 
 app.use(express.json());
 
