@@ -25,7 +25,7 @@ const Test = () => {
     setLoading(true);
     setError(null); // Reset error state before fetching
     try {
-      const response = await axios.get('http://localhost:5000/api/questions');
+      const response = await axios.get('/api/questions');
       console.log('Fetched questions:', response.data); // Log the response
 
       setQuestions(response.data);

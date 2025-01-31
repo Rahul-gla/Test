@@ -25,7 +25,7 @@ function Features() {
       const newQuestion = { question, options, correctOption };
 
       try {
-        const response = await fetch('http://localhost:5000/api/questions', {
+        const response = await fetch('/api/questions', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

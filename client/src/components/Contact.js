@@ -25,7 +25,7 @@ function Contact() {
 
     try {
       // Send the contact data to the backend
-      await axios.post('http://localhost:5000/api/contacts', {
+      await axios.post('/api/contacts', {
         name,
         email,
         message

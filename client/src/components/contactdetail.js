@@ -16,7 +16,11 @@ const ContactDetail = () => {
             try {
 
                // https://test-5w2d.onrender.com
-                const response = await axios.get('http://localhost:5000/api/contacts');
+                const response = await axios.get('/api/contacts');
+
+
+                // const response = await axios.get('http://localhost:5000/api/contacts');
+
 
                  // Adjust the URL as needed
                 setContacts(response.data);
