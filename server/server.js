@@ -14,8 +14,16 @@ const PORT = process.env.PORT || 5000;
 const MONGODB_URI="mongodb+srv://rahulgla2cs23:X62bBix8sVhX951i@cluster0.0w8vd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 // Middleware
+// app.use(cors({
+//   origin: 'http://localhost:3000'  // Replace with your frontend URL
+// }));
+
+
+// const cors = require('cors');
 app.use(cors({
-  origin: 'http://localhost:3000'  // Replace with your frontend URL
+    origin: 'http://localhost:3000', // Adjust this to your frontend's origin
+    methods: ['GET', 'POST'],
+    credentials: true
 }));
 
 app.use(express.json());
