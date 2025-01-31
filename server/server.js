@@ -21,7 +21,7 @@ const MONGODB_URI="mongodb+srv://rahulgla2cs23:X62bBix8sVhX951i@cluster0.0w8vd.m
 
 // const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:3000', // Adjust this to your frontend's origin
+    origin: 'http://localhost:5000', // Adjust this to your frontend's origin
     methods: ['GET', 'POST'],
     credentials: true
 }));
