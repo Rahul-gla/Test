@@ -1,0 +1,242 @@
+/* App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  margin: 20px 0;
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+/* Project Info */
+.projectinfo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.projectinfo h4 {
+  font-size: 1.2em;
+  color: #0072ff;
+}
+
+/* Container for Upload and Test */
+.container2 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1.2em;
+}
+
+form input[type="file"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* Generate Test Button */
+form button {
+  padding: 10px 20px; /* Adjust the padding for smaller button */
+  background-color: #0072ff;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto; /* Ensures the button width fits its content */
+  max-width: 250px; /* Optional: limits the button width */
+  margin: 0 auto; /* Centers the button if needed */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Test Area */
+#testContainer {
+  margin-top: 30px;
+}
+
+#questions {
+  margin-top: 20px;
+}
+
+.question {
+  margin-bottom: 25px;
+}
+
+.question p {
+  font-size: 1.1em;
+}
+
+.question input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1em;
+}
+
+/* Submit Answer Button */
+#submitAnswers {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1em;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Make the button a block-level element */
+  width: auto; /* Width will adjust to content */
+  max-width: 250px; /* Optional: to control the button width */
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+}
+
+#submitAnswers:hover {
+  background-color: #218838;
+}
+
+
+#results {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#results h3 {
+  font-size: 1.3em;
+  color: #0072ff;
+}
+
+#results p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Answer Feedback */
+.correct {
+  color: green;
+  font-size: 1.1em;
+}
+
+.incorrect {
+  color: red;
+  font-size: 1.1em;
+}
+
+.correct-answer {
+  color: green;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.user-answer {
+  color: red;
+  font-size: 1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container2 {
+    padding: 15px;
+  }
+
+  form label {
+    font-size: 1em;
+  }
+
+  form input[type="file"], form button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #submitAnswers {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .question p {
+    font-size: 1em;
+  }
+
+  #results h3 {
+    font-size: 1.2em;
+  }
+
+  #results p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container2 {
+    padding: 10px;
+  }
+
+  form input[type="file"], form button {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  #submitAnswers {
+    font-size: 1em;
+    padding: 8px 15px;
+  }
+
+  .question p {
+    font-size: 1em;
+  }
+
+  #results h3 {
+    font-size: 1em;
+  }
+
+  #results p {
+    font-size: 0.9em;
+  }
+}

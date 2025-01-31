@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Container Styles */
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Test Creator Styles */
+#test-creator {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#test-creator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#question-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#question-container input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#question-container input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+#question-container button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#question-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Test Preview Styles */
+#test-preview {
+  margin-top: 30px;
+}
+
+#test-preview .question-item {
+  margin-bottom: 15px;
+}
+
+.question-item strong {
+  font-weight: bold;
+}
+
+.question-item input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+#test-preview button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#test-preview button:hover {
+  background-color: #218838;
+}
+
+/* Result Styles */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #question-container {
+    gap: 15px;
+  }
+
+  #question-container input, #question-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #test-creator {
+    padding: 15px;
+  }
+
+  #test-preview button {
+    width: 100%;
+  }
+}
+
+/* For Small Screens */
+@media (max-width: 480px) {
+  #test-creator h2 {
+    font-size: 20px;
+  }
+
+  #test-creator {
+    padding: 10px;
+  }
+
+  #question-container input, #question-container button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #test-preview button {
+    padding: 10px;
+  }
+}
