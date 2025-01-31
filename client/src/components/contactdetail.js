@@ -14,7 +14,11 @@ const ContactDetail = () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/contacts'); // Adjust the URL as needed
+
+               // https://test-5w2d.onrender.com
+                const response = await axios.get('http://localhost:5000/api/contacts');
+
+                 // Adjust the URL as needed
                 setContacts(response.data);
             } catch (err) {
                 setError(err.message);
